@@ -15,7 +15,7 @@ class CheckIfEmailVerified
      */
     public function handle($request, Closure $next)
     {
-        if (!$request->user()->email-verified)
+        if (!$request->user()->email_verified)
         {
             if($request->expectsJson())
             {
